@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.music_player.rapController">
+   <children>
+      <SplitPane dividerPositions="0.28890728476821187" orientation="VERTICAL" prefHeight="405.0" prefWidth="607.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="113.0" prefWidth="605.0" text="Rap Playlist" textAlignment="CENTER" textFill="#7c75f4">
+                     <font>
+                        <Font name="Algerian" size="55.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="back_rap" mnemonicParsing="false" onAction="#backrap" text="Back" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: black;">
+               <children>
+                  <ListView fx:id="raplist" layoutX="-2.0" layoutY="1.0" onMouseClicked="#playrap" prefHeight="283.0" prefWidth="607.0" style="-fx-background-color: grey;" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

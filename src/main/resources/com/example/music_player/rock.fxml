@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.music_player.rockController">
+   <children>
+      <SplitPane dividerPositions="0.2831423895253682" orientation="VERTICAL" prefHeight="410.0" prefWidth="608.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="605.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="119.0" prefWidth="608.0" text="Rock Playlist" textAlignment="CENTER" textFill="#b3ed9a">
+                     <font>
+                        <Font name="Algerian" size="48.0" />
+                     </font>
+                  </Label>
+                  <Button layoutY="1.0" mnemonicParsing="false" onAction="#backrock" text="Back" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="605.0" style="-fx-background-color: black;">
+               <children>
+                  <ListView fx:id="rocklist" onMouseClicked="#playrock" prefHeight="289.0" prefWidth="605.0" style="-fx-background-color: grey;" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
